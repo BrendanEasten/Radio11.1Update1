@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio 11.1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="neon-vinyl-disc-3d-icon-isolated-on-the-transparent-background-png.webp">
+</head>
+<body>
+    <header>
+        <h1 class="radio">Radio <b>11.1</b></h1>
+        <!-- <h1 class="explore">Explore thousands of songs from all genres!</h1>-->
+        <p>Produced By Brendan Easten</p>
+    </header>
+    
+    <h1 id="genre-title">Current Genre</h1>
+
+    <div class="cd-container">
+        <button id="prev-btn" class="control-button">←</button>
+        <img src="chillwaveDisc/chillWaveDisc.webp" alt="CD" class="cd" id="cd">
+        <button id="next-btn" class="control-button">→</button>
+    </div>
+        <br>
+        <p class="track" id="track-info">Now Playing: <span id="track-title">No Track</span></p>
+        <br>
+
+        <!-- Music player controls -->
+        <div class="controls">
+            <button id="play-btn" class="play-button">Play</button>
+        </div>
+
+        <div class="volume-container">
+            <label for="volume-slider" class="volume-label"></label>
+            <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="1">
+        </div>
+        <audio id="audio-player" src="your-music.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
